@@ -1,3 +1,5 @@
+package atividade01;
+
 public class Produto{
     private int codigo;
     private String descricao;
@@ -39,7 +41,7 @@ public class Produto{
     }
 
     public double calculaPrecoVenda(){
-        return valor_compra + custo + margem_lucro*(valor_compra + custo)
+        return valor_compra + custo + margem_lucro*(valor_compra + custo);
     }
 
     public double getValorDeCompra(){
@@ -56,10 +58,10 @@ public class Produto{
         this.custo = custo;
     }
 
-    public double getMargemDeCompra(){
+    public double getMargemDeLucro(){
         return this.margem_lucro;
     }
-    public void setMargemDeCompra(double margem_lucro){
+    public void setMargemDeLucro(double margem_lucro){
         this.margem_lucro = margem_lucro;
     }
 }
